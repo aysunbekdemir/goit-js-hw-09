@@ -2,18 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="../js/01-gallery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./gallery.js" defer></script>
 </head>
 
 <body>
-    <li class="gallery-item">
-        <a class="gallery-link" href="large-image.jpg">
-            <img class="gallery-image" src="small-image.jpg" alt="Image description" />
-        </a>
-    </li>
+    <ul class="gallery" id="lightgallery">
+
+        <li class="gallery-item">
+            <a class="gallery-link" href="large-image.jpg">
+                <img class="gallery-image" src="small-image.jpg" data-source="large-image.jpg"
+                    alt="Image description" />
+            </a>
+        </li>
+    </ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+
 
 </body>
 
